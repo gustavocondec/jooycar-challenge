@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "0cb8cef1-1e82-4b47-a872-576b1d00c782",
+		"name": "Jooycar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16069405"
+	},
+	"item": [
+		{
+			"name": "Create Trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"readings\": [\r\n    {\r\n      \"time\": 1642500462000,\r\n      \"speed\": 9,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580158,\r\n        \"lon\": -70.567227\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500466000,\r\n      \"speed\": 26,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.58013,\r\n        \"lon\": -70.566995\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500470000,\r\n      \"speed\": 28,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580117,\r\n        \"lon\": -70.566633\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500474000,\r\n      \"speed\": 13,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580078,\r\n        \"lon\": -70.566408\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500478000,\r\n      \"speed\": 18,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580005,\r\n        \"lon\": -70.566498\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500482000,\r\n      \"speed\": 32,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.58002,\r\n        \"lon\": -70.566837\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500486000,\r\n      \"speed\": 38,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580038,\r\n        \"lon\": -70.567265\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500490000,\r\n      \"speed\": 38,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580043,\r\n        \"lon\": -70.56773\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500494000,\r\n      \"speed\": 35,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580048,\r\n        \"lon\": -70.56817\r\n      }\r\n    },\r\n    {\r\n      \"time\": 1642500498000,\r\n      \"speed\": 20,\r\n      \"speedLimit\": 38,\r\n      \"location\": {\r\n        \"lat\": -33.580053,\r\n        \"lon\": -70.568502\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Trip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/trip?distance_gte=0.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trip"
+					],
+					"query": [
+						{
+							"key": "start_get",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "start_lte",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "distance_gte",
+							"value": "0.5"
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

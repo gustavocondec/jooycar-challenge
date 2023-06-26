@@ -1,0 +1,7 @@
+version: "3.7"
+name: "local-jooycar"
+services:
+  mongobd:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
