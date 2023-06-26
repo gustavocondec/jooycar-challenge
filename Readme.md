@@ -1,4 +1,8 @@
 ## 1. The challenge code in Docker
+
+By: Gustavo Condezo Camayo
+linkdin: https://www.linkedin.com/in/gustavo-condezo-camayo-52ab3b196/
+
 Postman collection is attached with the name: Jooycar-challenge.postman_collection.json
 
 For the project Two environment variables are required:

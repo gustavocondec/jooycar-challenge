@@ -4,7 +4,6 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const start = async (): Promise<void> => {
-  console.log("mon", process.env.MONGO_URI);
   if (process.env?.MONGO_URI == null) throw new Error("MONGO_URI must be defined");
   if (process.env?.PORT == null) throw new Error("PORT must be defined");
 
